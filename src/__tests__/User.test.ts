@@ -1,7 +1,7 @@
 import request from 'supertest';
 import { app } from '../app';
 
-import createConnection from '../database';
+import createConnection from '../shared/database';
 
 describe("Users", () => {
     beforeAll(async () => {

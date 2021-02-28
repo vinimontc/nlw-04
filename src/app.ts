@@ -1,9 +1,9 @@
 import 'reflect-metadata';
 import express, { NextFunction, Request, Response } from 'express';
 import "express-async-errors";
-import createConnection from './database';
+import createConnection from './shared/database';
 import {router} from './routes';
-import { AppError } from './errors/AppError';
+import { AppError } from './shared/errors/AppError';
 
 createConnection();
 

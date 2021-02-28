@@ -2,7 +2,7 @@ import request from 'supertest';
 import { getConnection } from 'typeorm';
 import { app } from '../app';
 
-import createConnection from '../database';
+import createConnection from '../shared/database';
 
 describe("Surveys", () => {
     beforeAll(async () => {

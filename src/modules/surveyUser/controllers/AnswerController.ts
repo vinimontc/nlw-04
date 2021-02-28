@@ -1,10 +1,9 @@
 import { Request, Response } from "express";
 import { getCustomRepository } from "typeorm";
-import { AppError } from "../errors/AppError";
+import { AppError } from "../../../shared/errors/AppError";
 import { SurveysUsersRepository } from "../repositories/SurveysUsersRepository";
 
 class AnswerController {
-
     async execute(request: Request, response: Response) {
         const { value } = request.params;
         const { u } = request.query;
